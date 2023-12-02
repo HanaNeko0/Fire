@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<link rel="stylesheet" href="about.css">
+<meta charset="utf-8">
+</head>
+<body style="color: black; background-color: #d9effa">
+  <div class="wrapper">
+  <nav class="navbar-block">
+  <a class="navbar-link" href="#">Home</a>
+  <a class="navbar-link" href="#">Heroes</a>
+  <a class="navbar-link" href="#">Community</a>
+</nav>
+</div>
+<div class="content-wrapper">
+  <section>
+  <h1 class="content-title">Contacts</h1>
+  <p class="paragraph-text">
+  <big><big>Wanna chat with customer service?</big></big>
+  </p>
+  <p class="paragraph-text">
+    <big><big>Call <b>344-344-344</b></big></big>
+  </p>
+
+  <dialog id="my-modal-ID" class="modal">
+    <form method="dialog">
+      <fieldset>
+        <legend>Personal information:</legend>
+      First name:<br>
+      <input type="text" name="firstname" value=" "><br>
+      Last name:<br>
+      <input type="text" name="lastname" value=" "><br><br>
+      <input  type="submit" value="Submit" id="button-close">
+        </fieldset>
+    </form>
+  </dialog>
+  
+  <menu class="button-flex">
+    <button id="button-open">Open</button>
+  </menu>
+
+</div>
+<div class="pagination">
+  <a href="index.html#">1</a>
+  <a class="active" href="about.html#">2</a>
+  <a href="#">3</a>
+</div>
+
+<script>
+  (function () {
+    const openButton = document.getElementById("button-open");
+    const closeButton = document.getElementById("button-close");
+    const modalID = document.getElementById("my-modal-ID");
+
+    openButton.addEventListener("click", () =>  {
+      modalID.showModal();
+    });
+
+    closeButton.addEventListener("click", () => {
+      modalID.close();
+    });
+  })();
+</script>
+
+  </body>
+</html>
