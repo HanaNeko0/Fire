@@ -1,0 +1,40 @@
+.page-block {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+.page-block{
+ background-color:#0388fc;
+ color: black;
+	border:1px solid #002752;
+}
+
+.slogan-text{
+  color: #3759A7;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+outline: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+.list-pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+
+.list-pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.list-pagination a:hover:not(.active)
+{background-color: #ddd;}
