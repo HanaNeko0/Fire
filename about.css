@@ -1,17 +1,12 @@
-.navbar-block {
+.header-block {
     display: flex;
     gap: 10px;
     font-size: 18px;
 }
-.navbar-block{
+.header-block{
  background-color:#0388fc;
  color: black;
 	border:1px solid #002752;
-}
-.content-title {
-    color: #031234;
-    text-align: center;
-background-color:#82bcfa;
 }
 
 
@@ -20,20 +15,17 @@ background-color:#82bcfa;
 
 }
 
-input{
-  width:30%;
-}
 
 a {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+outline: none;
 }
 
 a:hover, a:focus {
     text-decoration: underline;
 }
 
-.pagination a {
+.items-pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
@@ -42,19 +34,19 @@ a:hover, a:focus {
 }
 
 
-.pagination a.active {
+.items-pagination a.active {
     background-color: dodgerblue;
     color: white;
 }
 
-.pagination a:hover:not(.active)
+.items-pagination a:hover:not(.active)
 {background-color: #ddd;}
 
 
  #my-modal-ID{
     width: 30%;
     height: 25%;
-} 
+}
 
 
 
@@ -108,4 +100,4 @@ input[type="submit"]:hover{
 #button-open:hover ,
 #button-open:focus{
     background-color: #002752;
-} 
+}
